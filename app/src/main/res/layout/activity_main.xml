@@ -5,23 +5,53 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:layout_margin="40dp"
+    android:layout_margin="10dp"
     android:orientation="vertical">
-
-
-        <android.support.v7.widget.RecyclerView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/cartas">
-        </android.support.v7.widget.RecyclerView>
-
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="300dp"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginTop="70dp"
+        android:layout_gravity="center_horizontal">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/ic_launcher_background"
+            android:layout_weight="2"
+            android:id="@+id/imagen1"/>
 
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_weight="2"
+            android:background="@drawable/ic_launcher_background"
+            android:id="@+id/imagen2"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="70dp"
+        android:layout_gravity="center_horizontal">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/ic_launcher_background"
+            android:layout_weight="2"
+            android:id="@+id/imagen3"/>
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_weight="2"
+            android:background="@drawable/ic_launcher_background"
+            android:id="@+id/imagen4"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:orientation="horizontal">
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -34,7 +64,9 @@
             android:text="Mandar resultados"
             android:id="@+id/mresultados"/>
     </LinearLayout>
-
-
-
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/suma"
+        android:text="numero"/>
 </LinearLayout>
